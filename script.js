@@ -1,6 +1,8 @@
 $(document).ready(function(){
     $('a').click(function(event){
-        alert("Thanks for visiting!");
+        alert("Iiiiiintercepted!");
         event.preventDefault();
+        $(this).hide('slow')
     });
+    $('a').addClass('test');
 });
